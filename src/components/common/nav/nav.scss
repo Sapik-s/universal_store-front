@@ -1,0 +1,56 @@
+.nav {
+	&__wrapper {
+		margin: 0 auto;
+		width: 100%;
+		background: #F0F0F4;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 0;
+
+			li {
+				position: relative;
+				padding: 0 0;
+				cursor: pointer;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 24px;
+				text-transform: capitalize;
+				color: #2F3035;
+
+				a {
+					&:after {
+						position: absolute;
+						content: "";
+						width: 0;
+						height: 3px;
+						bottom: -15px;
+						left: 0;
+						background-color: #1C62CD;
+						transition: width .2s ease-in-out;
+
+					}
+
+					&:hover {
+						text-shadow: 1px 0 0 currentColor;
+					}
+
+					&:hover:after {
+						display: block;
+						width: 100%;
+						transition: width .3s ease-in-out;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.nav{
+		display: none;
+	}
+}
