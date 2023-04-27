@@ -1,0 +1,57 @@
+.nav {
+	background: #346eb7;
+	width: 100%;
+
+	&__wrapper {
+		margin: 0 auto;
+		width: 100%;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 0;
+
+			li {
+				position: relative;
+				padding: 0 0;
+				cursor: pointer;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 24px;
+				text-transform: capitalize;
+
+				a {
+					color: #FFFFFF;
+
+					&:after {
+						position: absolute;
+						content: "";
+						width: 0;
+						height: 3px;
+						bottom: -15px;
+						left: 0;
+						background-color: darkblue;
+						transition: width .2s ease-in-out;
+					}
+
+					&:hover {
+						text-shadow: 1px 0 0 currentColor;
+					}
+
+					&:hover:after {
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.nav {
+		display: none;
+	}
+}

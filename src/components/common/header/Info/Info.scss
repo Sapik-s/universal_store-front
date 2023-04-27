@@ -1,0 +1,44 @@
+.header {
+	&__link-move {
+		max-width: 445px;
+		width: 100%;
+
+		ul {
+			display: flex;
+
+			a {
+				margin-right: 50px;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 24px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.header {
+		&__link-move {
+			max-width: 400px;
+
+			ul {
+				a {
+					margin-right: 25px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.header {
+		&__link-move {
+			display: none;
+		}
+	}
+}
