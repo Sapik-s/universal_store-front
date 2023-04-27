@@ -1,6 +1,5 @@
-import MainPages from '../../layout/pages/mainPages/main';
-
-import './app.scss';
+import MainPages from '../../layout/pages/mainPages/Main';
+import './App.scss';
 
 function App() {
 

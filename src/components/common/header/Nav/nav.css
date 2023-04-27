@@ -1,7 +1,10 @@
+.nav {
+  background: #346eb7;
+  width: 100%;
+}
 .nav__wrapper {
   margin: 0 auto;
   width: 100%;
-  background: #F0F0F4;
 }
 .nav__wrapper ul {
   display: flex;
@@ -18,7 +21,9 @@
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  color: #2F3035;
+}
+.nav__wrapper ul li a {
+  color: #FFFFFF;
 }
 .nav__wrapper ul li a:after {
   position: absolute;
@@ -27,7 +32,7 @@
   height: 3px;
   bottom: -15px;
   left: 0;
-  background-color: #1C62CD;
+  background-color: darkblue;
   transition: width 0.2s ease-in-out;
 }
 .nav__wrapper ul li a:hover {
@@ -36,10 +41,9 @@
 .nav__wrapper ul li a:hover:after {
   display: block;
   width: 100%;
-  transition: width 0.3s ease-in-out;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .nav {
     display: none;
   }

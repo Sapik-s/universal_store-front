@@ -1,40 +1,24 @@
 .header {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 25px;
   max-width: 100%;
-  height: 170px;
+  height: 154px;
   max-height: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 17px 1px rgba(182, 196, 206, 0.24);
 }
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header__logoDesktop {
+.header__logo-desktop {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-}
-.header__link-move {
-  max-width: 445px;
-  width: 100%;
-}
-.header__link-move ul {
-  display: flex;
-}
-.header__link-move ul a {
-  margin-right: 50px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
-.header__link-move ul a:last-child {
-  margin-right: 0;
 }
 .header__order-content {
   max-width: 445px;
@@ -45,29 +29,6 @@
   padding-right: 25px;
 }
 
-.burger {
-  display: none;
-}
-
-.order-content__location-content {
-  display: flex;
-  align-items: center;
-}
-.order-content__address {
-  display: flex;
-  align-items: center;
-  margin-right: 3px;
-}
-.order-content__address span {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
-.order-content__address svg {
-  margin-bottom: 15px;
-}
-
 .user-content__item {
   position: relative;
   margin-right: 10px;
@@ -76,86 +37,22 @@
 .user-content__item:last-child {
   margin-right: 0;
 }
-.user-content__circle {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: -47%;
-  bottom: 0;
-  border-radius: 100px;
-  background: #1C62CD;
-}
-.user-content__circle span {
-  display: block;
-  margin: 0 auto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
-  color: #FFFFFF;
-  padding: 4px 0;
-}
 
 .circleVisibility {
   display: none;
 }
 
 @media (max-width: 1199px) {
-  .header__link-move {
-    max-width: 400px;
-  }
-  .header__link-move ul a {
-    margin-right: 25px;
-  }
   .header__order-content {
     max-width: 400px;
   }
 }
 @media (max-width: 1023px) {
-  .header__link-move {
+  .header {
+    height: 81px;
+  }
+  .header__logo-desktop {
     display: none;
-  }
-  .header__logoDesktop {
-    display: none;
-  }
-  .header__logoMobile {
-    display: flex;
-    align-items: center;
-    margin-left: 35px;
-  }
-  .order-content__address {
-    display: none;
-  }
-  .burger {
-    display: flex;
-    align-items: center;
-  }
-  .burger__menu {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    width: 33.67px;
-    height: 3px;
-    background: #2F3035;
-    border-radius: 3px;
-  }
-  .burger__menu:after {
-    content: "";
-    position: absolute;
-    top: 9px;
-    width: 33.67px;
-    height: 3px;
-    background: #2F3035;
-    border-radius: 3px;
-  }
-  .burger__menu:before {
-    content: "";
-    position: absolute;
-    top: -9px;
-    width: 33.67px;
-    height: 3px;
-    background: #2F3035;
-    border-radius: 3px;
   }
 }
 

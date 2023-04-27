@@ -1,4 +1,4 @@
-import HeaderBlock from "../../blocks/header/header";
+import HeaderBlock from "../../blocks/header/HeaderBlock";
 import './main.scss';
 
 const MainPages = () => {
