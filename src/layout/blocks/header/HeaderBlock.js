@@ -9,7 +9,7 @@ const HeaderBlock = () => {
     const [appState, setAppState] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://77.91.78.85/api/v1/categories/sctructures/`).then((resp) => {
+        axios.get(`http://77.91.78.85/api/v1/categories/structures/`).then((resp) => {
             const response = resp.data;
             setAppState(response.result);
         })
