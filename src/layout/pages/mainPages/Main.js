@@ -7,7 +7,7 @@ const MainPages = () => {
     return(
         <div>
             <HeaderBlock />
-            <BlockProducts/>
+            <BlockProducts title={"Популярные товары"} category={['запчасти','моторы','шины','электроника','инструменты ','акссесуары']} items={[1,2,3,4,5]}/>
         </div>
     );
 }

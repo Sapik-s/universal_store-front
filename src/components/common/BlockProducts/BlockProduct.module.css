@@ -103,11 +103,11 @@
 }
 
 .blockproducts__cards__items{
-    display: flex;
-    justify-content: space-between;
+    
+    
     height: 403px;
     overflow: hidden;
-    flex-wrap: wrap;
+    white-space: nowrap;
 }
 @media (max-width: 1199px) {
 	.blockproducts__container {

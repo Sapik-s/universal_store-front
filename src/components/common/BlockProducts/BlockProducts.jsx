@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "./BlockProduct.module.css"
-/* import BlockProductsCategory from '../UI/BlockProductsCategory'
-import BlockProductsCard from './BlockProductsCard/BlockProductsCard' */
+import BlockProductsCategory from "./UI/BlockProductCategory/BlockProductCategory"
+import BlockProductsCard from './BlockProductCart/BlockProductCart' 
 
  function BlockProducts({title,category,items}) {
   return (
@@ -9,12 +9,12 @@ import BlockProductsCard from './BlockProductsCard/BlockProductsCard' */
         <div className={style.blockproducts__container}>
         <div className={style.blockproducts__title}>{title}</div>
         <div className={style.blockproducts__category}>
-       {/*  {category.map((el,id)=><BlockProductsCategory key={id}>{el}</BlockProductsCategory>)} */}
+        {category.map((el,id)=><BlockProductsCategory key={id}>{el}</BlockProductsCategory>)}
         </div>
         <div className={style.blockproducts__cards}>
             <div className={style.blockproducts__cards_left}></div>
             <div className={style.blockproducts__cards__items} >
-           {/*  {items.map((el,id)=><BlockProductsCard />)} */}
+            {items.map((el,id)=><BlockProductsCard />)}
             </div>
            
             <div className={style.blockproducts__cards_right}></div>
