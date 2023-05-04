@@ -102,7 +102,13 @@
     transition: all 0.3s;
 }
 
-
+.blockproducts__cards__items{
+    display: flex;
+    justify-content: space-between;
+    height: 403px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
 @media (max-width: 1199px) {
 	.blockproducts__container {
 		max-width: 972px;
