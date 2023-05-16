@@ -20,10 +20,55 @@
     border-radius: 3px;
 
  
-
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items:center;
+}
+.card_item_watch{
+    position: relative;
+    transition: all 0.2s;
+
+}
+.card_item_watch:hover{
+    background: #FFFFFF;
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    border-radius: 3px;
+}
+
+.card_item_watch:hover .card_item__title ,.card_item_watch:hover .card_item__price{
+    color: #1C62CD;
+}
+
+.card_item_watch::before{
+    content: 'Посмотреть товар';
+    position: absolute;
+    top: 120px;
+    height: 60px;
+    width: 80%;
+    background: #FFFFFF;
+    opacity: 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F3035;
+    transition: all 0.2s;
+}
+
+.card_item_watch:hover::before{
+    opacity: 0.9;
+
 }
 
 .card_item__sale{
@@ -44,7 +89,23 @@
     top: 16px;
     right: 19px;
     cursor: pointer;
-    
+
+
+}
+
+.card_item__like path{
+    position: relative;
+    transition: all 0.1s;
+
+}
+
+
+
+
+
+.card_item__like:hover path{
+    fill: red;
+
 }
 
 
@@ -93,4 +154,47 @@
     bottom:-2.5px;
     right: 0;
     border-radius: 10px 0px 0px 0px;
+}
+
+
+
+.card_item__cart path{
+    transition: all 0.1s;
+}
+
+.card_item__cart:hover path{
+
+    fill: #2F3035;
+}
+
+.card_item_none{
+    margin-top: 7px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    /* Основной текст */
+
+    color: #2F3035;
+
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.card_item_none_link{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* акцент */
+
+    color: #1C62CD;
+
+    border-bottom: 1px solid #1C62CD;;
 }
