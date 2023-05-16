@@ -100,12 +100,16 @@
 }
 
 
-
+.active.card_item__like path{
+    fill: #1C62CD;
+    stroke: #1C62CD;
+}
 
 
 .card_item__like:hover path{
-    fill: red;
-
+    
+    stroke: #1C62CD;
+    
 }
 
 
@@ -120,6 +124,7 @@
 .card_item__title{
     margin-top: 14px;
     max-width: 229px;
+    overflow-wrap: break-word;
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
@@ -127,6 +132,7 @@
     line-height: 21px;
     text-align: center;
     color: #2F3035;
+   
 }
 
 .card_item__price{
@@ -183,6 +189,8 @@
     display: flex;
     flex-direction: column;
     gap: 13px;
+
+  
 }
 
 .card_item_none_link{
@@ -197,4 +205,9 @@
     color: #1C62CD;
 
     border-bottom: 1px solid #1C62CD;;
+    transition: all 0.3s;
+}
+
+.card_item_none_link:hover{
+   font-size: 17px;
 }

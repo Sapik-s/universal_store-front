@@ -5,11 +5,13 @@ import BlockProductsCard from './BlockProductCart/BlockProductCart'
 
  function BlockProducts({title,category,items}) {
 
+    const [nowCategory,setNowCategory]=React.useState(category[0])
+
    
     const pages=Math.ceil((items.length-1)/4)
     const [now_page,setNowPage]=React.useState(0)
     const [margin,setMargin]=React.useState('')
-  const changeMargin=(button)=>{
+    const changeMargin=(button)=>{
      
        const margin=-1200;
       
@@ -36,7 +38,7 @@ import BlockProductsCard from './BlockProductCart/BlockProductCart'
         <div className={style.blockproducts__container}>
         <div className={style.blockproducts__title}>{title}</div>
         <div className={style.blockproducts__category}>
-        {category.map((el,id)=><BlockProductsCategory key={id}>{el}</BlockProductsCategory>)}
+        {category.map((el,id)=><BlockProductsCategory setNowCategory={setNowCategory} bool={nowCategory===el?false:true} key={id}>{el}</BlockProductsCategory>)}
         </div>
         <div className={style.blockproducts__cards}>
           {now_page===0?<></>:<div onClick={e=>changeMargin('left')} className={style.blockproducts__cards_left}></div>}

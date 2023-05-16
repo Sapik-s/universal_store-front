@@ -56,6 +56,10 @@
     width: 100%;
 }
 
+.blockproducts__category_item_active.blockproducts__category_item::before {
+    width: 100%;
+}
+
 
 .blockproducts__cards{
     margin-top: 35px;
